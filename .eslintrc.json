@@ -1,0 +1,33 @@
+{
+    "root": true,
+    "extends": ["eslint-config-lovata/.eslintrc"],
+    "rules": {
+        "indent": ["warn", 4],
+        "linebreak-style": "off",
+        "no-plusplus": "off",
+        "unicorn/prefer-query-selector": "off",
+        "unicorn/filename-case": ["error", { "case": "pascalCase" }]
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jquery": true
+    },
+    "globals": {
+        "expect": true,
+        "describe": true,
+        "it": true,
+        "browser": true,
+        "after": true,
+        "before": true,
+        "beforeEach": true,
+        "afterEach": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
+    }
+}
